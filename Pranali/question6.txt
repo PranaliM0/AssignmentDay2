@@ -1,0 +1,9 @@
+Q6. How to unstage changes from the staged area? Write the command for it.
+Answer:
+To unstage changes from the staged area (i.e., move changes from the staging area back to the working directory), use the following command:
+git reset <file>
+
+To unstage all changes:
+git reset
+
+This will keep your changes in the working directory but remove them from the staged area.

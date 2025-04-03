@@ -1,0 +1,18 @@
+Q2. How to set multiple remote repositories for the same project? Explain the use case.
+Answer:
+Git allows you to set multiple remotes for a project. This is useful when you want to push to multiple repositories or clone the same repository in multiple locations.
+
+Use Case:
+You might want to push your changes to both a central repository (e.g., GitHub) and a backup repository (e.g., GitLab).
+
+Steps:
+
+Add the primary remote repository:
+git remote add origin https://github.com/user/repository.git
+
+Add the secondary remote repository:
+git remote add backup https://gitlab.com/user/repository.git
+
+Push to both remotes:
+git push origin master
+git push backup master
