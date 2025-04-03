@@ -1,0 +1,14 @@
+Q1. What is cherry-pick? Explain the use case of it and also write steps to do it.
+Answer:
+Cherry-pick in Git is the process of selecting specific commits from one branch and applying them to another branch. It is useful when you want to apply only certain commits without merging the entire branch.
+
+Use Case:
+If you made a fix on a feature branch but want to apply the fix directly to the master branch without merging all other changes from the feature branch, you would cherry-pick the specific commit(s).
+
+Steps:
+1. Identify the commit hash you want to cherry-pick.
+2. Checkout to the branch where you want to apply the commit (e.g., master).
+3. Run the following command:
+git cherry-pick <commit-hash>
+4. Resolve any conflicts if they arise.
+5. Commit the changes and push them to the repository.
